@@ -1,10 +1,11 @@
 {
   "name": "xephiratone",
   "version": "1.0.0",
-  "description": "Music Player",
+  "description": "Music player with a youtube downloader",
   "main": "main.js",
   "dependencies": {
-    "electron": "^6.0.1"
+    "electron": "^6.0.1",
+    "howler": "^2.1.2"
   },
   "devDependencies": {},
   "scripts": {

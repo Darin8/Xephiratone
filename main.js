@@ -18,7 +18,7 @@ app.on('ready', function(){
 
     // Load html into window
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'mainWindow.html'),
+        pathname: path.join('./assets/html/', 'mainWindow.html'),
         protocol:'file:',
         slashes: true
     }));
@@ -49,7 +49,7 @@ function createAddWindow(){
     addWindow.setMenu(null);
     // Load html into window
     addWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'addWindow.html'),
+        pathname: path.join('./assets/html/', 'addWindow.html'),
         protocol:'file:',
         slashes: true
     }));
@@ -73,10 +73,12 @@ const mainMenuTemplate = [
                 }
             },
             {
-                label: 'Clear Songs',
-                accelerator: process.platform == 'darwin' ? 'Command+C' :
-                'Ctrl+C',
-
+                label: 'Refresh',
+                accelerator: process.platform == 'darwin' ? 'Command+R' :
+                'Ctrl+R',
+                click(){
+                    mainWindow.reload();
+                }
             },
             {
                 label:'Quit',
@@ -114,5 +116,3 @@ if(process.env.NODE_ENV !== 'production'){
         ]
     })
 }
-
-// Mp3 player
