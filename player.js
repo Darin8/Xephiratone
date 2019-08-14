@@ -265,7 +265,7 @@ Player.prototype = {
 // Setup our new audio player class and pass it the playlist.
 var playerArray = [];
 var songFiles = fs.readdirSync('./Songs/');
-for(i = 0; i < songFiles.length; i++){
+for(i = 1; i < songFiles.length; i++){
     playerArray.push({
         title: songFiles[i].substring(0,songFiles[i].length - 4),
         file: songFiles[i],
