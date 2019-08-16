@@ -14,7 +14,7 @@ body {
   margin: 0;
   overflow: hidden;
   background: #bb71f3;
-  background: linear-gradient(135deg, #ffaaaa 0%, #ff85a2 100%);
+  background: linear-gradient(135deg, #ffcccc 0%, #ff85a2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bb71f3', endColorstr='#3d4d91', GradientType=1);
   font-family: "Helvetica Neue", "Futura", "Trebuchet MS", Arial;
   -webkit-user-select: none;
