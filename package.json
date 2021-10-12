@@ -4,7 +4,7 @@
   "description": "Music player with a youtube downloader",
   "main": "main.js",
   "dependencies": {
-    "electron": "^7.2.4",
+    "electron": "^11.5.0",
     "howler": "^2.1.2"
   },
   "devDependencies": {},
